@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    background: url("https://1gai.ru/uploads/posts/2020-03/1585556930_45544.jpg");
+}
+
+.game-body h2{
+font-size: 38px;
+border: 3px solid black;
+border-radius: 15px;
+background: linear-gradient(rgb(148, 162, 217), rgb(210, 94, 76));
+font-style: italic;
+font-weight:bold;
+}
+
+.game-body p{
+font-size: 30px; 
+border: 3px solid black;
+background: linear-gradient(rgb(148, 162, 217), rgb(210, 94, 76));
+font-style: italic;
+font-weight:bold;
+border-radius: 15px;
+
+}
+.game-body button{
+    width: 60px;
+    height: 40px;
+}
+
+.game,.winner,.looser,.stepBtn,.nichya
+{
+    display: none;
+}
+
+#start{
+height: 150px;
+width: 150px;
+border-radius: 50%;
+background-color: brown;
+font-size: 20px;
+font-style: italic;
+font-weight:bold;
+}
+
+.stepBtn{
+    height: 150px;
+width: 150px;
+border-radius: 50%;
+background-color: brown;
+font-size: 20px;
+font-style: italic;
+font-weight:bold;
+}
+
+.game{
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    margin: 50px auto;
+    max-width: 600px;
+
+    
+}
+
