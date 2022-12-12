@@ -30,6 +30,8 @@
 888        888  "Y8888P  "Y888  "Y88888 888     "Y8888 8888888 */
 
 
+
+
 .picture1 {
     margin: 50px 0;
     display: grid;
@@ -120,6 +122,10 @@
    grid-row: 4; 
 }
 
+
+
+
+
 /* 
 8888888b.  d8b          888                              .d8888b.  
 888   Y88b Y8P          888                             d88P  Y88b 
@@ -129,6 +135,7 @@
 888        888 888      888    888  888 888    88888888 d88P"      
 888        888 Y88b.    Y88b.  Y88b 888 888    Y8b.     888"       
 888        888  "Y8888P  "Y888  "Y88888 888     "Y8888  888888888 */
+
 
 
 
@@ -186,6 +193,7 @@
 
 
 
+
 /*
 8888888b.  d8b          888                              .d8888b.  
 888   Y88b Y8P          888                             d88P  Y88b 
@@ -195,6 +203,10 @@
 888        888 888      888    888  888 888    88888888 888    888 
 888        888 Y88b.    Y88b.  Y88b 888 888    Y8b.     Y88b  d88P 
 888        888  "Y8888P  "Y888  "Y88888 888     "Y8888   "Y8888P"  */
+
+
+
+
 .picture3 {
     margin: 50px 0;
     display: grid;
@@ -332,3 +344,51 @@
     grid-area: 5/1/7/3;
   }
 
+
+
+
+  /* 
+ .d8888b.           888 
+d88P  Y88b          888 
+888    888          888 
+888         8888b.  888 
+888  88888     "88b 888 
+888    888 .d888888 888 
+Y88b  d88P 888  888 888 
+ "Y8888P88 "Y888888 888*/
+
+
+
+ main{
+  display: grid;
+  background-color: rgb(24, 21, 25);
+  border: 5px solid  rgb(24, 21, 25);
+  grid-area: main; 
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-auto-rows: 400px; 
+  gap: 5px;
+  margin-bottom: 50px;
+}
+
+
+
+ .img-1{
+  background-image: url("https://arthive.net/res/media/img/sx200/artist/4f2/596760@2x.jpg");
+}
+.img-2{
+  background-image: url("http://art-storona.ru/arc/2008/4/pic/2008-4-7-1m.jpg");
+  }
+.img-3{
+  background-image: url("https://arthive.net/res/media/img/oy800/work/daf/294723@2x.jpg");
+}
+.img-4{
+  background-image: url("https://flomaster.club/uploads/posts/2022-06/1656262832_4-flomaster-club-p-risunki-van-goga-krasivo-4.jpg");
+}
+.img-5{
+  background-image: url("https://flomaster.club/uploads/posts/2022-06/1656262903_11-flomaster-club-p-risunki-van-goga-krasivo-11.jpg");
+}
+.img-6{
+  background-image: url("http://vangogen.ru/wp-content/uploads/2014/06/684.jpg");
+}
+
+/* НЕ ПОНИМАЮ ГДЕ ПРИМЕНИТЬ ОБЖЕКТ ФИТ ЧТОБЫ ВНУТРИ КАЖДВЯ КАРТИНКА ВЫРАВНИВАЛАСЬ,А НЕ ПРОСТО КУСОК ПОКАЗЫВАЛСЯ */
