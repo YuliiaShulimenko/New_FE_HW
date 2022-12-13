@@ -358,37 +358,46 @@ Y88b  d88P 888  888 888
  "Y8888P88 "Y888888 888*/
 
 
-
- main{
+.galary {
+  margin: 50px 0;
   display: grid;
-  background-color: rgb(24, 21, 25);
-  border: 5px solid  rgb(24, 21, 25);
-  grid-area: main; 
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  grid-auto-rows: 400px; 
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: repeat(4, 300px);
   gap: 5px;
-  margin-bottom: 50px;
+  justify-content: center;
 }
 
-
-
- .img-1{
+.div:nth-child(1){
   background-image: url("https://arthive.net/res/media/img/sx200/artist/4f2/596760@2x.jpg");
-}
-.img-2{
-  background-image: url("http://art-storona.ru/arc/2008/4/pic/2008-4-7-1m.jpg");
-  }
-.img-3{
-  background-image: url("https://arthive.net/res/media/img/oy800/work/daf/294723@2x.jpg");
-}
-.img-4{
-  background-image: url("https://flomaster.club/uploads/posts/2022-06/1656262832_4-flomaster-club-p-risunki-van-goga-krasivo-4.jpg");
-}
-.img-5{
-  background-image: url("https://flomaster.club/uploads/posts/2022-06/1656262903_11-flomaster-club-p-risunki-van-goga-krasivo-11.jpg");
-}
-.img-6{
-  background-image: url("http://vangogen.ru/wp-content/uploads/2014/06/684.jpg");
+  background-size: cover;
 }
 
-/* НЕ ПОНИМАЮ ГДЕ ПРИМЕНИТЬ ОБЖЕКТ ФИТ ЧТОБЫ ВНУТРИ КАЖДВЯ КАРТИНКА ВЫРАВНИВАЛАСЬ,А НЕ ПРОСТО КУСОК ПОКАЗЫВАЛСЯ */
+.div:nth-child(2){
+  background-image: url("http://art-storona.ru/arc/2008/4/pic/2008-4-7-1m.jpg");
+  background-size: cover; 
+  grid-row: 1/span 2; 
+}
+
+.div:nth-child(3){
+  background-image: url("https://arthive.net/res/media/img/oy800/work/daf/294723@2x.jpg");
+  background-size: cover;
+
+}
+
+.div:nth-child(4){
+  background-image: url("https://flomaster.club/uploads/posts/2022-06/1656262832_4-flomaster-club-p-risunki-van-goga-krasivo-4.jpg");
+  background-size: cover;
+  grid-row: 3/span 2; 
+}
+
+.div:nth-child(5){
+  background-image: url("https://flomaster.club/uploads/posts/2022-06/1656262903_11-flomaster-club-p-risunki-van-goga-krasivo-11.jpg");
+  background-size: cover;
+
+}
+
+.div:nth-child(6){
+  background-image: url("http://vangogen.ru/wp-content/uploads/2014/06/684.jpg");
+  background-size: cover;
+ 
+}
