@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-body{
+    
+    display: flex;
+    flex-direction: column;
+background: linear-gradient(rgb(148, 162, 217), rgb(219, 219, 74));
+
+}
+h1{
+    margin: 30px;
+    font-size: 40px;
+    font-style: italic;
+    color: brown;
+    text-align: center;
+    
+}
+p{
+    font-size: 30px;
+    font-style: italic;
+}
+
+ul{
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px 30px;
+}
+
+.btn #start{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background-color: brown;
+font-size: 20px;
+font-style: italic;
+font-weight:bold;
+justify-content:right;
+
+}
