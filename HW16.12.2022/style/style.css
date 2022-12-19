@@ -1,0 +1,478 @@
+/* 
+First level: Сверстать следующий макет:
+ https://www.figma.com/file/0pYK54KHIFu5HHV6u1Jco6/Template-(Copy)?node-id=18%3A3&t=ZakoDciGz8CLCd8d-0 
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Merriweather:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+             888                             888                  
+             888                             888                  
+             888                             888                  
+.d8888b      88888b.   .d88b.   8888b.   .d88888  .d88b.  888d888 
+88K          888 "88b d8P  Y8b     "88b d88" 888 d8P  Y8b 888P"   
+"Y8888b.     888  888 88888888 .d888888 888  888 88888888 888     
+     X88 d8b 888  888 Y8b.     888  888 Y88b 888 Y8b.     888     
+ 88888P' Y8P 888  888  "Y8888  "Y888888  "Y88888  "Y8888  888     
+*/
+
+.header {
+  height: 779px;
+  background: url(/image/Rectangle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 1112px;
+  margin: 0 auto;
+}
+
+.banner {
+  height: 298.81px;
+  padding-top: 198.66px;
+  width: 586px;
+}
+.h2-text {
+  height: 136.03px;
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 66px;
+  color: #ffffff;
+}
+
+.btn {
+  margin-top: 93px;
+  width: 270px;
+  height: 69.76px;
+  background: #005fa3;
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* 
+                                                d8b          888 
+                                                Y8P          888 
+                                                             888 
+.d8888b     .d8888b  88888b.   .d88b.   .d8888b 888  8888b.  888 
+88K         88K      888 "88b d8P  Y8b d88P"    888     "88b 888 
+"Y8888b.    "Y8888b. 888  888 88888888 888      888 .d888888 888 
+     X88 d8b     X88 888 d88P Y8b.     Y88b.    888 888  888 888 
+ 88888P' Y8P 88888P' 88888P"   "Y8888   "Y8888P 888 "Y888888 888 
+                     888                                         
+                     888                                         
+                     888                                         
+*/
+.special {
+  background: #ebebeb;
+}
+.h4-special1 {
+  width: 445px;
+  height: 23px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: #bdbdbd;
+  padding-top: 140px;
+}
+
+.h2-special {
+  width: 663px;
+  height: 47px;
+  padding-top: 45px;
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  color: #333333;
+}
+
+.h4-special2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.repeatImg {
+  background: url(/image/Rectangle\ 2.png);
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-top: 102px;
+  padding-bottom: 140px;
+}
+
+.h4-special2 {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 261px 118px 45px 45px;
+}
+
+/* 
+.d8888b       .d8888b .d88b.  88888b.d88b.  88888b.   8888b.  88888b.  888  888 
+88K          d88P"   d88""88b 888 "888 "88b 888 "88b     "88b 888 "88b 888  888 
+"Y8888b.     888     888  888 888  888  888 888  888 .d888888 888  888 888  888 
+     X88 d8b Y88b.   Y88..88P 888  888  888 888 d88P 888  888 888  888 Y88b 888 
+ 88888P' Y8P  "Y8888P "Y88P"  888  888  888 88888P"  "Y888888 888  888  "Y88888 
+                                            888                             888 
+                                            888                        Y8b d88P 
+                                            888                         "Y88P"   
+*/
+.company {
+  background-color: white;
+}
+.h4-companyLeft {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 24px;
+  color: #bdbdbd;
+}
+
+.h2-companyLeft {
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: 48px;
+  color: #333333;
+  width: 347px;
+  height: 117px;
+  padding-top: 40px;
+}
+span {
+  color: #005fa3;
+}
+
+.p-compLeft {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+  width: 445px;
+  height: 245px;
+  padding-top: 60px;
+}
+.aboutUs {
+  display: flex;
+  margin-top: 31px;
+  gap: 120px;
+  margin-bottom: 140px;
+}
+
+.compRight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.results {
+  background: #ebebeb;
+  padding: 30px 108px 40px 40px;
+}
+
+.h2-companyRight {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 55px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.h4-companyRight {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  width: 107px;
+}
+
+.companyLink {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: #005fa3;
+  margin-left: 40px;
+  padding-bottom: 30px;
+}
+
+.hover {
+  background: #005fa3;
+}
+
+.hover h2 {
+  font-family: "Lato";
+  font-size: 55px;
+  color: #ffffff;
+}
+.hover h4,
+.hover a {
+  font-family: "Lato";
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* 
+                                       888                      888             
+                                       888                      888             
+                                       888                      888             
+.d8888b       .d8888b .d88b.  88888b.  888888  8888b.   .d8888b 888888 .d8888b  
+88K          d88P"   d88""88b 888 "88b 888        "88b d88P"    888    88K      
+"Y8888b.     888     888  888 888  888 888    .d888888 888      888    "Y8888b. 
+     X88 d8b Y88b.   Y88..88P 888  888 Y88b.  888  888 Y88b.    Y88b.       X88 
+ 88888P' Y8P  "Y8888P "Y88P"  888  888  "Y888 "Y888888  "Y8888P  "Y888  88888P' 
+*/
+.contacts {
+  height: 623px;
+  background: url(/image/Rectangle3.png);
+}
+
+.h2-contactsTxt {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  color: #ffffff;
+  width: 445px;
+  margin-bottom: 60px;
+}
+
+.p-contactsTxt {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  width: 445px;
+  margin-bottom: 80px;
+}
+
+.info {
+  padding-top: 135px;
+  padding-bottom: 140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.contactsTxt {
+  display: flex;
+  flex-direction: column;
+}
+.contact-tel {
+  margin-left: 30x;
+  margin-right: 40px;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 21px;
+  color: #ffffff;
+}
+.contact-email {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.contact-email img {
+  margin-right: 15px;
+}
+
+/* 
+   d88P  .d888                               Y88b    
+  d88P  d88P"                                 Y88b   
+ d88P   888                                    Y88b  
+d88P    888888 .d88b.  888d888 88888b.d88b.     Y88b 
+Y88b    888   d88""88b 888P"   888 "888 "88b    d88P 
+ Y88b   888   888  888 888     888  888  888   d88P  
+  Y88b  888   Y88..88P 888     888  888  888  d88P   
+   Y88b 888    "Y88P"  888     888  888  888 d88P    
+*/
+.formContact {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 35px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.nameContact input,
+.surnameContact input {
+  width: 100%;
+}
+
+.nameInp,
+.surnameInp {
+  margin-top: 15px;
+  background-color: transparent;
+  color: #bdbdbd;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #bdbdbd;
+  resize: none;
+}
+
+.contactBtn {
+  margin-top: 50px;
+  background-color: #005fa3;
+  color: #fff;
+  width: 270px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 25px;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+}
+
+/* 
+              .d888                  888                    
+             d88P"                   888                    
+             888                     888                    
+.d8888b      888888 .d88b.   .d88b.  888888 .d88b.  888d888 
+88K          888   d88""88b d88""88b 888   d8P  Y8b 888P"   
+"Y8888b.     888   888  888 888  888 888   88888888 888     
+     X88 d8b 888   Y88..88P Y88..88P Y88b. Y8b.     888     
+ 88888P' Y8P 888    "Y88P"   "Y88P"   "Y888 "Y8888  888     
+*/
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 50px;
+}
+
+
+
+
+
+
+
+/* 
+888b     d888 8888888888 8888888b. 8888888        d8888 
+8888b   d8888 888        888  "Y88b  888         d88888 
+88888b.d88888 888        888    888  888        d88P888 
+888Y88888P888 8888888    888    888  888       d88P 888 
+888 Y888P 888 888        888    888  888      d88P  888 
+888  Y8P  888 888        888    888  888     d88P   888 
+888   "   888 888        888  .d88P  888    d8888888888 
+888       888 8888888888 8888888P" 8888888 d88P     888 
+                                                        
+*/
+
+@media (max-width: 754px) {
+  .header {
+    height: 779px;
+    background: url(/image/111.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 754px;
+    height: 670px;
+  }
+  .repeatImg {
+    background: url(/image/222.png);
+    width: 592px;
+    height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .p-compLeft
+  {
+    width: 100%;
+  }
+  .container {
+    width: 592px;
+    margin: 0 auto;
+  }
+  .h2-text {
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 66px;
+    text-align: center;
+  }
+  .aboutUs {
+    flex-direction: column;
+  }
+  .compRight {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .results {
+    display: flex;
+    flex-direction: row;
+   
+  }
+
+  .h2-companyRight {
+    padding-bottom: 33px;
+    height: 54px;
+  }
+  .h4-companyRight {
+    padding-top: 50px;
+    width: 143.54px;
+  }
+  .companyLink {
+    padding-top: 70px;
+  }
+  .contacts {
+    background: url(/image/333.png);
+    background-repeat: no-repeat;
+    width: 754px;
+    height: 890px;
+  }
+  .info {
+    flex-direction: column;
+    padding-top: 29px;
+  }
+  .telEmail {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+}
