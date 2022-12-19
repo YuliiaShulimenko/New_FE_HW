@@ -360,7 +360,7 @@ Y88b    888   d88""88b 888P"   888 "888 "88b    d88P
   height: 60px;
   font-size: 18px;
   line-height: 25px;
-  align-self: flex-end;
+  margin-left: 320px;
   border: none;
   cursor: pointer;
 }
