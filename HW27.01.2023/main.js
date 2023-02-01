@@ -25,9 +25,9 @@ key3: 'value3',
 key4: 'value4',
 }
 
-function getKeys(someObj) {                // пишем функцию,у которой в кач-ве аргумента выступает someObj
+function getKeys(obj) {                // пишем функцию,у которой в кач-ве аргумента выступает someObj
     let keysArray = []                     // создаем новый пустой массив
-    for (let key in someObj) {             // проходимся циклом фор ин по someObj    
+    for (let key in obj) {             // проходимся циклом фор ин по someObj    
         keysArray.push(key)                // пушим в наш новый массив ключи
     }
     return  keysArray;                     // возвращаем массив keysArray
@@ -39,8 +39,8 @@ console.log(getKeys(someObj));
 
 // Воспользуемся метотод Object.keys(obj) , который возвращает массив с ключами объекта
 
-function getKeys(someObj){
-    return Object.keys(someObj)
+function getKeys(obj){
+    return Object.keys(obj)
 }
 console.log(getKeys(someObj));
 
@@ -60,12 +60,11 @@ console.log(getKeys(someObj));
 
 let array2 =[1,2,3,4,5];
 
-function getAvg(array2) {
-    return array2.reduce((prev , item) => (prev + item)) / array2.length; //это колбек функция,у которой 2 аргумента prev- первый элемент массива и item-второй элемент массива
+function getAvg(arr) {
+    return arr.reduce((prev , item) => (prev + item)) / arr.length; //это колбек функция,у которой 2 аргумента prev- первый элемент массива и item-второй элемент массива
 }
   console.log(getAvg(array2));
 
-  let
 
   //******** Тигран,прошу на консультации объяснить,у меня трудности с функциями ,где мы в кач-ве аргумента ничего не передаем и где передаем,тк я попробовала прописать с пустыми скобками function getAvg( ),оно тоже отработало и вывело результат 3 .Понимаю ,что аргумент передаем по ТЗ, но в общем разницу не особо понимаю когда это надо делать,когда нет
 
@@ -148,10 +147,10 @@ key4: 'value4',
 //*************************/ РЕШЕНИЕ 2 /***************************//
 
 
-function getEntries(someObj4) {
+function getEntries(obj) {
     let newArr4 = [];                        // создаем новую переменную с пустым массивом,куда будем пушить преобразованные элементы
-    for (let key in someObj4) {                // проходимся циклом фор ин по someObj4 
-        newArr4.push([key, someObj4[key]]);    // в новый массив newArr4 пушим ключ, значение объекта под этим ключом
+    for (let key in obj) {                // проходимся циклом фор ин по someObj4 
+        newArr4.push([key, obj[key]]);    // в новый массив newArr4 пушим ключ, значение объекта под этим ключом
     }
     return newArr4;                            // возвращаем массив newArr4
 }
