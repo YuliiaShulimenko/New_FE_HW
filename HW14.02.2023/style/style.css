@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.classRating{
+    text-align: center;
+}
+
+.classRating span {
+  height: 25px;
+  padding: 15px;
+}
+
+.active {
+  color: orange;
+}
+
+.root {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  background: url(https://st2.depositphotos.com/1033941/5450/i/600/depositphotos_54500347-stock-photo-night-starry-sky.jpg);
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.classDiv {
+    background: linear-gradient(rgb(149, 149, 149), white);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 40px;
+  }
+
+  .classImg {
+    height: 200px;
+    object-fit: contain;
+    max-width: 100%;
+  }
+  
+  .classTitle{
+    font-size: 25px;
+    height: 40px;
+  }
+  
+  .classPrice {
+    font-size: 25px;
+  }
