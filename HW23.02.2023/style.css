@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .classRating{
+      text-align: center;
+  }
+  
+  .classRating span {
+    height: 25px;
+    padding: 15px;
+  }
+  
+  .active {
+    color: orange;
+  }
+  
+  .root {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+   
+  }
+  .main{
+    background: url(https://static.pantone.ru/public/HYDKJEJ6KPaw3KJnPP9s3A/gradient-1080x675.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+  }
+  .button{
+    display: flex;
+    gap:200px;
+  }
+  
+  .btn{
+    height: 50px;
+    width: 100px;
+    font-size: 35px;
+  }
+  .classDiv {
+      background: linear-gradient(rgb(149, 149, 149), white);
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border-radius: 15px;
+      border: 2px solid rgb(0, 0, 0);
+      padding: 20px;
+      background-color: #fff;
+      margin-top: 40px;
+    }
+  
+    .classImg {
+      height: 200px;
+      object-fit: contain;
+      max-width: 100%;
+    }
+    
+    .classTitle{
+      font-size: 25px;
+      height: 40px;
+    }
+    
+    .classPrice {
+      font-size: 25px;
+    }
