@@ -93,6 +93,15 @@ First level: Сверстать следующий макет:
   cursor: pointer;
 }
 
+.line{
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #222;
+  margin: 5px;
+  border-radius: 2px;
+  transition: all .5s;
+}
 /* 
              888                             888                  
              888                             888                  
@@ -836,7 +845,7 @@ Y88b    888   d88""88b 888P"   888 "888 "88b    d88P
                                                         
 */
 
-/* @media (max-width: 754px) {
+@media (max-width: 754px) {
   .header {
     height: 779px;
     background: url(/image/111.png);
@@ -881,6 +890,9 @@ Y88b    888   d88""88b 888P"   888 "888 "88b    d88P
   .results {
     display: flex;
     flex-direction: row;
+    width: 562px;
+height: 120px;
+    
   }
 
   .h2-companyRight {
@@ -908,4 +920,16 @@ Y88b    888   d88""88b 888P"   888 "888 "88b    d88P
     display: flex;
     justify-content: space-around;
   }
-} */
+}
+
+
+
+@media (max-width: 800px) {
+  .p_reviews {
+    width: 405px;
+  }
+
+  .reviews_author {
+    grid-template-columns: 1fr;
+  }
+}
