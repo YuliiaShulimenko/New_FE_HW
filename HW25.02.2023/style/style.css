@@ -861,6 +861,9 @@ Y88b    888   d88""88b 888P"   888 "888 "88b    d88P
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .navigator {
+    display: none;
+  }
 
   .images {
     display: grid;
