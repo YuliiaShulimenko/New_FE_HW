@@ -12,15 +12,10 @@ First level: Сверстать следующий макет:
 }
 
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
 }
-/* .main {
-  max-width: 1920px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-} */
+
 
 /* 
 
@@ -38,10 +33,10 @@ First level: Сверстать следующий макет:
 
 */
 .menu {
-  height: 118px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  list-style: none;
+  gap: 30px;
 }
 
 .sec_menu {
@@ -76,11 +71,7 @@ First level: Сверстать следующий макет:
   cursor: pointer;
   text-decoration: none;
 }
-.menu {
-  display: flex;
-  gap: 68px;
-  list-style: none;
-}
+
 
 .h2_lable {
   color: #005fa3;
@@ -91,6 +82,7 @@ First level: Сверстать следующий макет:
   width: 30px;
   height: 30px;
   cursor: pointer;
+  display: none;
 }
 
 .line{
@@ -102,6 +94,8 @@ First level: Сверстать следующий макет:
   border-radius: 2px;
   transition: all .5s;
 }
+
+
 /* 
              888                             888                  
              888                             888                  
@@ -228,6 +222,39 @@ First level: Сверстать следующий макет:
   width: 15px;
   height: 15px;
 }
+
+/* //ДЛЯ МОДАЛЬНОГО ОКНА */
+/* 
+.modal{
+  display: none;
+  background-color: #ebebeb;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  align-items: center
+ 
+}
+
+.modal_menu{
+  list-style: none;
+ 
+}
+.modal_menu_item a{
+text-decoration: none;
+color: #005fa3;
+font-size: 25px;
+}
+.modal_menu_item{
+  padding-bottom: 20px;
+} */
+
 
 /* 
                                                 d8b          888 
@@ -427,6 +454,7 @@ Y88b.    888 888 Y8b.     888  888 Y88b.       X88
   background-color: #ebebeb;
   padding-top: 100px;
 }
+
 .h4_clients {
   color: #bdbdbd;
   font-family: "Lato";
@@ -454,7 +482,7 @@ Y88b.    888 888 Y8b.     888  888 Y88b.       X88
 
 .clients_slider {
   position: relative;
-  width: 1100px;
+  /* width: 1100px; */
   overflow: hidden;
   margin-top: 80px;
 }
@@ -845,7 +873,39 @@ Y88b    888   d88""88b 888P"   888 "888 "88b    d88P
                                                         
 */
 
-@media (max-width: 754px) {
+
+
+@media (max-width: 800px) {
+  .p_reviews {
+    width: 405px;
+  }
+
+  .reviews_author {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+.clients_item:nth-child(1),
+.clients_item:nth-child(2),
+.clients_item:nth-child(3){
+display: none;
+}
+.clients_slide{
+padding-left:170px ;
+
+}
+.h4_clients{
+  text-align: center;
+}
+.h2_clients{
+  text-align: center;
+}
+.burger {
+
+  display: block;
+}
   .header {
     height: 779px;
     background: url(/image/111.png);
@@ -853,6 +913,7 @@ Y88b    888   d88""88b 888P"   888 "888 "88b    d88P
     background-repeat: no-repeat;
     width: 754px;
     height: 670px;
+    position: relative;
   }
   .repeatImg {
     background: url(/image/222.png);
@@ -927,12 +988,7 @@ height: 120px;
 
 
 
-@media (max-width: 800px) {
-  .p_reviews {
-    width: 405px;
-  }
 
-  .reviews_author {
-    grid-template-columns: 1fr;
-  }
-}
+
+
+

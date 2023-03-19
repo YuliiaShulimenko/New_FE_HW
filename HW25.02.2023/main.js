@@ -2,12 +2,14 @@
 //ПОэтому сделала столько,на сколько моих сил и нервов хватила,не судите строго
 
 // Не получается:
-// -подогнать див с картинками майкрасофт под мобильную версию,чтобы из 16 картинок была видна только одна
-// -не сделала открывающееся окно меню(мобильное окно меню)
-// -вообще с этим дивом Майкрасофт проблемы,по срелке не листается нормально
+
+// -не сделала открывающееся окно меню(мобильное окно меню)_Т.Е. СДЕЛАЛА,НО ПРИШЛОСЬ ЗАКОММЕНТИТЬ,ТК ОНО СРАЗУ ВЫЛАЗИТ И ЧТОБЫ ЕГО УБРАТЬ,МНЕ НУЖНО СУЗИТЬ ЭКРАН ДО МЕДИА ЗАПРОСА С ПОЯВЛЕЕМ БУРГЕРА И УБРАТЬ ЭТО МОДАЛЬНОЕ ОКНО,ХОТЯ ИЗНАЧАЛЬНО ЗАДАЮ ЕМУ ДИСПЛЕЙ НАН
+// -Див майкрасофт где*клиенты) по стрелке не листает
 
 //-на последнем слайде с отзывами вроде слайдер работает,но если я влево жму стрелочку и оно пролистывается в обратную сторону дальше 1-й точки,то оно куда-то вылазит и экран белый становится
 
+
+//я не знаю как исправить эти ошибки и довести до ума,пыталась написать одну универсальную фунцию для трех слайдов,обязательно что-то где-то ломается
 
 // Задана ссылка на figma-макет:
 // https://www.figma.com/file/AnxdgZrMkMxfNcDMl13Rhi/Template?node-id=0%3A1&t=zq6TBZXoeVBLObwE-0
@@ -84,6 +86,7 @@ function slideList(){
     if (slider_index < banner.length - 1) {
         slider_index++;
       bannerSlider.style.left = `${-1 * slider_index * currentWidth}px`;
+      changeRounds(slider_index)
     } else {
         slider_index = 0
         bannerSlider.style.left = `${-1 * slider_index * currentWidth}px`;
@@ -103,11 +106,6 @@ left_btn.addEventListener("click", () => {
     }
     changeRounds(slider_index)
 })
-
-
-// go_left()
-
-//функция переключения слайда по кружочкам
 
 
 function changeRounds(slider_index) {
@@ -135,12 +133,6 @@ function changeRounds(slider_index) {
   roundsActive()
 }
   slideList()
-
-
-
-  
-
-
 
 
 
@@ -206,6 +198,8 @@ function toggleRoundClass(activePos) {
 }
 
 
+
+
 // 8888888b.                   d8b                                 
 // 888   Y88b                  Y8P                                 
 // 888    888                                                      
@@ -256,3 +250,18 @@ round.forEach((item, index) => {
     activeDot();
   });
 });
+
+
+
+//МОДАЛЬНОЕ ОКНО ПРИШЛОСЬ ЗАКОМЕНТИРОВАТЬ,ТК ХОТЯ Я ЕМУ ВЫСТАВИЛА ИЗНАЧАЛЬНО ДИСПЛЕЙ НАН,ТО ОНО У МЕНЯ ОТОБРАЖАЛОСЬ СРАЗУ
+//-----------------
+
+// const burgerBtn =document.querySelector(".burger")
+// const modal = document.querySelector(".modal")
+// let showModal = false
+
+// burgerBtn.onclick=()=>{
+//   showModal = !showModal
+//   showModal ? modal.style.display= "flex" : modal.style.display= "none"
+//   console.log(showModal)
+// }
