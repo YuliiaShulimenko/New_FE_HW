@@ -224,12 +224,11 @@ First level: Сверстать следующий макет:
 }
 
 /* //ДЛЯ МОДАЛЬНОГО ОКНА */
-/* 
+
 .modal{
   display: none;
   background-color: #ebebeb;
   border: 5px solid black;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -253,7 +252,7 @@ font-size: 25px;
 }
 .modal_menu_item{
   padding-bottom: 20px;
-} */
+}
 
 
 /* 
@@ -903,7 +902,6 @@ padding-left:170px ;
   text-align: center;
 }
 .burger {
-
   display: block;
 }
   .header {
